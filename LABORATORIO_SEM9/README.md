@@ -60,7 +60,7 @@ Tu meta:
 
 Usaremos **Round Robin** con quantum de 20 segundos: es como decirle al cocinero "trabaja 20 segundos en cada plato, y pasa al siguiente".
 
-![image](https://github.com/user-attachments/assets/ee912cab-d742-420b-ad16-d09fc77c5839)
+
 
 ---
 
