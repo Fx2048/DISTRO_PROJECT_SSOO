@@ -115,25 +115,5 @@ Usaremos **Round Robin** con quantum de 20 segundos: es como decirle al cocinero
 
 ---
 
-## 📁 Excel con los datos
-
-A continuación, voy a generar un archivo Excel con:
-
-* Detalles de cada tarea
-* Estadísticas finales
-* Un gráfico de Gantt sencillo simulando la ejecución por ciclos
-
-Generando archivo...
-
-
-Aquí tienes el archivo Excel con los datos del caso práctico, incluyendo:
-
-* ✅ Información de cada tarea (cliente, tiempos)
-* 📊 Estadísticas globales de rendimiento
-
-
-
-
-
 
 
