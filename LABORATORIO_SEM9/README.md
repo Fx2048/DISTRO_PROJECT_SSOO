@@ -103,6 +103,75 @@ Usaremos **Round Robin** con quantum de 20 segundos: es como decirle al cocinero
 | 4     | C       | 80                   | 60                  | 120              | 180               |
 | 5     | B       | 30                   | 100                 | 90               | 120               |
 
+
+
+# 🍽️ Planificación de Tareas en un Centro de Datos – Analizado con Sabor a Cocina
+
+Este documento analiza distintos algoritmos de planificación de tareas desde la perspectiva de una cocina industrial. Evaluamos cuál es más adecuado para un entorno con múltiples tareas, buscando maximizar eficiencia, equidad y rapidez de atención al cliente.
+
+## 🧾 Tabla de Tareas del Caso Práctico
+
+| Tarea | Cliente   | Tiempo de preparación (Burst) | Tipo de Pedido                        |
+|-------|-----------|-------------------------------|---------------------------------------|
+| 1     | Cliente A | 45                            | Plato grande (análisis de datos)      |
+| 2     | Cliente B | 25                            | Plato mediano (consulta de BD)        |
+| 3     | Cliente A | 10                            | Plato pequeño (verificación)          |
+| 4     | Cliente C | 80                            | Plato enorme (procesamiento de imagen)|
+| 5     | Cliente B | 30                            | Plato mediano (reporte)               |
+
+---
+
+## ⚙️ Comparativa de Algoritmos de Planificación
+
+| Criterio                      | FIFO                            | SJF                                  | Prioridades                        | **Round Robin (RR)** ✅                 |
+|------------------------------|----------------------------------|--------------------------------------|------------------------------------|----------------------------------------|
+| 🔄 **Utilización de CPU**      | Alta si no hay huecos            | Puede dejar CPU ociosa               | Alta pero no equitativa            | **Siempre activa** (100%)              |
+| ⏱ **Tiempo de respuesta**     | Bajo solo para la 1.ª tarea      | Bueno para tareas cortas             | Depende de prioridades             | **Todas las tareas responden rápido** |
+| 🕓 **Tiempo de espera**        | Alto para tareas pequeñas        | Muy alto para tareas largas          | Tareas de baja prioridad sufren    | **Reparto balanceado del tiempo**     |
+| 🔁 **Tiempo de retorno**       | Alto si hay tareas largas        | Bajo para tareas cortas              | Muy variable                       | **Equilibrado y justo**               |
+| 🚀 **Throughput (tareas/s)**   | Aceptable si tareas homogéneas   | Malo con tareas grandes              | Inestable                          | **5 tareas / 200s = 0.025 tareas/s**  |
+| ⚖ **Equidad**                 | Baja (primero en llegar manda)   | Baja (tareas largas sufren)          | Muy baja (prioridad fija)          | **Justo para todas las tareas**       |
+| ❌ **Starvation posible**      | No                               | Sí (largas pueden esperar siempre)   | Sí (si prioridad es baja)          | **No hay inanición**                  |
+
+---
+
+## ✅ ¿Por qué elegimos **Round Robin**?
+
+| Fundamento                       | Explicación Culinaria 🍳                                                                 |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Equidad entre tareas**         | Cada plato entra en la estufa por turnos. Todos los clientes reciben atención parcial.  |
+| **Evita la inanición**           | Nadie se queda esperando mientras otros terminan sus buffets. Todos avanzan.            |
+| **Responde rápido**              | Aunque no se termine, se empieza a cocinar rápido → el cliente sabe que está en marcha. |
+| **Avance constante**             | Aunque los platos sean grandes, avanzan por partes. Nada se queda olvidado.             |
+| **Maximiza eficiencia global**   | La cocina nunca se detiene. Siempre hay algo cocinándose.                                |
+| **Perfecto para multiusuarios**  | Ideal para centros de datos con múltiples clientes y procesos interactivos.              |
+
+---
+
+## 📊 Resultados con Round Robin (Quantum: 20s)
+
+| Tarea | Cliente | Burst | Tiempo de respuesta | Tiempo de espera | Tiempo de retorno |
+|-------|---------|-------|---------------------|------------------|-------------------|
+| 1     | A       | 45    | 0                   | 35               | 80                |
+| 2     | B       | 25    | 20                  | 35               | 60                |
+| 3     | A       | 10    | 40                  | 40               | 50                |
+| 4     | C       | 80    | 60                  | 120              | 180               |
+| 5     | B       | 30    | 100                 | 90               | 120               |
+
+### Métricas globales:
+- ⏱ Tiempo promedio de respuesta: **44 s**
+- 🕓 Tiempo promedio de espera: **64 s**
+- 🔁 Tiempo promedio de retorno: **98 s**
+- 🚀 Throughput: **0.025 tareas/segundo**
+- 💻 Utilización de CPU: **100%**
+
+---
+
+## 🧠 Conclusión
+
+El algoritmo **Round Robin** logra el **mejor equilibrio entre eficiencia, justicia y rendimiento** para entornos con múltiples tareas y clientes. En nuestra metáfora culinaria, garantiza que todos los platos avancen en la cocina sin que nadie se quede con hambre.
+
+
 ---
 
 ## 📈 Métricas globales (Estadísticas)
