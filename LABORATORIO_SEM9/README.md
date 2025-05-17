@@ -116,4 +116,6 @@ Usaremos **Round Robin** con quantum de 20 segundos: es como decirle al cocinero
 ---
 
 
+![image](https://github.com/user-attachments/assets/796e22a4-2d7b-4c4b-bbc7-b8f392a1c87c)
+
 
