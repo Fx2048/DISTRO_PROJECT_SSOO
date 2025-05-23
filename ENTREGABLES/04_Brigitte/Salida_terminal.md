@@ -1,4 +1,4 @@
-``
+```
 brigitte@vbox:~$ sudo apt update
 [sudo] contraseña para brigitte: 
 Obj:1 http://deb.debian.org/debian bookworm InRelease
