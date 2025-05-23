@@ -2,41 +2,40 @@
 
 ## ✅ 1. Crear y configurar la máquina virtual (VirtualBox)
 
-Se creó la VM llamada **hola2** con Debian 64 bits y 8 GB de RAM. 
+## 🗂 FASE 1 – Bitácora del Hito 1: Entorno Virtual Establecido (Responsable: Matías)
 
-* **Sistema > Procesador** → asignar 3 CPUs si tienes 4 reales.
-* **Pantalla > Video RAM** → subir a 64 MB mínimo.
-* **Red**: NAT 
-* **Almacenamiento**: Se puede agregar una ISO de Debian
+### 📌  *Resumen del hito*
+
+
+
+> Se configuró una VM Debian con 8 GB de RAM, 2 CPUs, y 20 GB de disco. Se instalaron paquetes base como build-essential, wget, gawk, bison, etc. Se creó la estructura de directorios /mnt/lfs, /mnt/lfs/sources y /mnt/lfs/tools. Se configuró la variable $LFS en .bashrc.
+
+---
 
 
 
 ---
 
-## ✅ 2. Instalar paquetes base (build-essential, wget, etc.)
+bash
+# Actualizar sistema
+sudo apt update && sudo apt upgrade -y
 
-Desde tu terminal en Debian:
+# Instalar paquetes necesarios
+sudo apt install build-essential bison gawk texinfo wget vim -y
 
-```bash
-sudo apt update
-sudo apt install build-essential wget curl vim git bison gawk texinfo
-```
+# Crear estructura de carpetas
+sudo mkdir -pv /mnt/lfs/{sources,tools}
+sudo chmod -v a+wt /mnt/lfs/sources
 
-También útiles:
+# Crear usuario lfs
+sudo groupadd lfs
+sudo useradd -s /bin/bash -g lfs -m -k /dev/null lfs
+sudo passwd lfs
 
-```bash
-sudo apt install zlib1g-dev libgmp-dev libmpfr-dev libmpc-dev
-```
+# Establecer variable $LFS
+echo 'export LFS=/mnt/lfs' >> ~/.bashrc
+source ~/.bashrc
 
----
-
-## ✅ 3. Crear estructura de directorios `/mnt/lfs`, `/sources`, `/tools`
-
-```bash
-sudo mkdir -pv /mnt/lfs
-sudo mkdir -v /mnt/lfs/sources
-sudo mkdir -v /mnt/lfs/tools
-```
 
 
 
@@ -44,7 +43,7 @@ sudo mkdir -v /mnt/lfs/tools
 
 ---
 
-## ✅ 4. Verificar conectividad y entorno limpio
+## ✅  Verificar conectividad y entorno limpio
 
 ### Verifica variables:
 
@@ -84,4 +83,35 @@ ls /mnt/lfs                  # Debe estar vacío o solo /sources y /tools
 ---
 
 
+
+---
+
+
+
+
+
+---
+
+### 🧩  *Errores encontrados y solución*
+
+Este es crucial. Anota errores como:
+
+* ❌ Permisos al crear carpetas → ✔ Solución: chmod -v a+wt /mnt/lfs/sources
+* ❌ $LFS no persistía → ✔ Solución: Añadir a .bashrc correctamente y hacer source ~/.bashrc
+* ❌ wget fallaba en una URL → ✔ Solución: Revisar conectividad y probar con curl
+
+
+---
+
+
+
+### ✍  *Fecha y responsable*
+
+
+
+🗓 Fecha: 23/05/2025  
+👤 Responsable: Matías
+
+
+---
 
