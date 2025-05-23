@@ -35,6 +35,8 @@ Verificar conectividad con $LFS y entorno limpio.
 ✔ Entrega esperada: Captura del entorno funcionando y logs de instalación.
 # [HITO 1](https://github.com/Fx2048/DISTRO_PROJECT_SSOO/new/main/ENTREGABLES/04_Brigitte/HITO1.md)
 
+# Oportunidades de mejora:
+
 # 🗂️ FASE 2: Construcción del Sistema Base
 🎯 Hito 2: Toolchain (Compilación de herramientas temporales)
 Específico: Compilar correctamente las herramientas temporales necesarias.
@@ -65,6 +67,7 @@ Validar PATH con $LFS/tools/bin.
 
 ✔ Entrega esperada: Bitácora de compilación y validación del entorno con pruebas.
 
+# Oportunidades de mejora:
 🎯 Hito 3: Construcción del Sistema LFS (Cap. 6-8)
 Específico: Construir el sistema base y preparar arranque.
 
