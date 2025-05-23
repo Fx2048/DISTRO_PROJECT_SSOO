@@ -1,3 +1,4 @@
+``
 brigitte@vbox:~$ sudo apt update
 [sudo] contraseña para brigitte: 
 Obj:1 http://deb.debian.org/debian bookworm InRelease
@@ -1661,5 +1662,7 @@ Preparando para desempaquetar .../54-vim-runtime_2%3a9.0.1378-2+deb12u2_all.deb
 2025-05-23 06:37:23 install libgmp-dev:amd64 <none> 2:6.2.1+dfsg1-1.1
 2025-05-23 06:37:24 install libmpfr-dev:amd64 <none> 4.2.0-1
 2025-05-23 06:37:24 install libmpc-dev:amd64 <none> 1.3.1-1
+
+``
 2025-05-23 06:37:24 install zlib1g-dev:amd64 <none> 1:1.2.13.dfsg-1
 
