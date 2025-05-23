@@ -1,4 +1,4 @@
-#HITO 1:
+# HITO 1:
 
 ## ✅ 1. Crear y configurar la máquina virtual (VirtualBox)
 
