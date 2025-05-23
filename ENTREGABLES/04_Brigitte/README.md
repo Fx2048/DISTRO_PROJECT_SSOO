@@ -66,8 +66,8 @@ Validar PATH con $LFS/tools/bin.
 
 
 ✔ Entrega esperada: Bitácora de compilación y validación del entorno con pruebas.
+[HITO2: ](https://drive.google.com/drive/folders/1pJNS7eI2p9bP3nhtzsSynBrsjwSDXqIN?hl=es)
 
-# Oportunidades de mejora:
 🎯 Hito 3: Construcción del Sistema LFS (Cap. 6-8)
 Específico: Construir el sistema base y preparar arranque.
 
