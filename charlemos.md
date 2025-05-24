@@ -21,6 +21,7 @@ Ambos sistemas buscan utilizar los recursos de manera eficiente, asegurando que 
 ![Imagen de WhatsApp 2025-05-24 a las 12 36 58_84320cb7](https://github.com/user-attachments/assets/483314fb-632f-4eab-8047-215d9be18694)
 
 
-![image](https://github.com/user-attachments/assets/547e4554-9dad-4241-9e3b-7e8a0fcf07d9)
+![image](https://github.com/user-attachments/assets/b2f4783a-b8f4-461f-b271-99c29e7807e3)
+
 
 ---
