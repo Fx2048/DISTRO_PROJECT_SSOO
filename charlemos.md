@@ -19,3 +19,4 @@ Ambos sistemas buscan utilizar los recursos de manera eficiente, asegurando que 
 
 ---
 
+![image](https://github.com/user-attachments/assets/547e4554-9dad-4241-9e3b-7e8a0fcf07d9)
