@@ -50,6 +50,18 @@ El presente proyecto tiene como finalidad construir un sistema operativo funcion
 
 Construir un sistema operativo funcional basado en Linux From Scratch, completamente personalizado, con documentación técnica detallada y funcionalidad mínima según especificaciones del curso.
 
+
+## 🗂️ Objetivos Específicos  
+1️⃣ **Configurar el Toolchain** → Compilar herramientas temporales como **Binutils, GCC y Glibc**, asegurando un entorno estable para la construcción del sistema base.  
+2️⃣ **Construir el sistema base** → Implementar desde fuentes los paquetes esenciales en un entorno **chroot**, garantizando la correcta integración y funcionamiento del sistema.  
+3️⃣ **Configurar el gestor de arranque** → Instalar y ajustar **GRUB** para permitir el arranque autónomo del sistema desde un disco virtual.  
+4️⃣ **Integrar una interfaz gráfica básica** → Instalar **Xorg y un gestor de ventanas ligero** (Fluxbox, XFCE) para mejorar la usabilidad del sistema.  
+5️⃣ **Implementar aplicaciones esenciales** → Agregar **navegador, editor de texto y terminal gráfica**, asegurando funcionalidades mínimas para el usuario final.  
+6️⃣ **Documentar el proceso de desarrollo** → Generar **bitácoras técnicas y una presentación en LaTeX y Word**, detallando pasos clave y soluciones aplicadas.  
+7️⃣ **Validar la estabilidad y funcionalidad** → Realizar **pruebas de ejecución** del sistema operativo en un entorno virtual antes de la entrega final.  
+
+
+
 ---
 
 ## 🗂️ FASE 1: Preparación y Entorno de Desarrollo
