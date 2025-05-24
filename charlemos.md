@@ -17,6 +17,10 @@ En la gestión de sistemas informáticos y administración empresarial, la asign
 ## Conclusión
 Ambos sistemas buscan utilizar los recursos de manera eficiente, asegurando que sean asignados y liberados según la demanda y evitando desperdicio. La gestión estratégica en cada entorno permite mejorar el rendimiento, ya sea en un sistema informático o en una empresa.
 
----
+
+![Imagen de WhatsApp 2025-05-24 a las 12 36 58_84320cb7](https://github.com/user-attachments/assets/483314fb-632f-4eab-8047-215d9be18694)
+
 
 ![image](https://github.com/user-attachments/assets/547e4554-9dad-4241-9e3b-7e8a0fcf07d9)
+
+---
