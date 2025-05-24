@@ -26,19 +26,3 @@ Ambos sistemas buscan utilizar los recursos de manera eficiente, asegurando que 
 
 ---
 
-digraph RAM_SA {
-    rankdir=LR;
-    node [shape=box style=rounded fontname="Arial"];
-
-    Start [label="Inicio del día\n(Toda la RAM libre)"];
-    ProyectoA [label="Llega Proceso A\n(Se asignan 4 empleados)"];
-    ProyectoB [label="Llega Proceso B\n(Se asignan 3 empleados)"];
-    TerminaA [label="Proceso A termina\n(4 empleados liberados)"];
-    ProyectoC [label="Llega Proceso C\n(Se necesitan 5 empleados)"];
-    Fragmentacion [label="No hay suficientes empleados contiguos\n(Fragmentación de memoria)"];
-    Compactacion [label="Se reorganizan empleados\n(Compactación de memoria)"];
-    ProyectoCEjecuta [label="Se ejecuta Proceso C\n(5 empleados asignados)"];
-    Fin [label="Memoria usada eficientemente"];
-
-    Start -> ProyectoA -> ProyectoB -> TerminaA -> ProyectoC -> Fragmentacion -> Compactacion -> ProyectoCEjecuta -> Fin;
-}
