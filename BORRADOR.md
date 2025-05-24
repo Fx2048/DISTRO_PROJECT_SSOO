@@ -1,4 +1,3 @@
-Aquí tienes tu documento estructurado, redactado con coherencia, subtítulos claros y listos para integrar imágenes mediante código (como `\includegraphics` en LaTeX o `<img>` en HTML, según el formato que uses). Puedes reemplazar los placeholders como `(código de imagen)` con el código real que uses para insertar imágenes.
 
 ---
 
@@ -14,29 +13,47 @@ El presente proyecto tiene como finalidad construir un sistema operativo funcion
 
 *(código de imagen aquí para el organigrama del equipo)*
 
+📌 **Brigitte** - *Product Owner*
+
+🔹 Define objetivos y revisa entregables.
+
+🔹 Coordina personalización del sistema.
+
+🔹 Supervisa tiempos y calidad.
+
+🔹 Valida cumplimiento de requisitos funcionales.
+
 📌 **Frank** - *Scrum Master & Desarrollo Técnico*
+
 🔹 Facilita la comunicación y seguimiento.
+
 🔹 Responsable de la compilación del toolchain (Binutils, GCC, Glibc).
+
 🔹 Documenta errores y soluciones rápidas.
+
 🔹 Asegura la integración fluida de herramientas.
 
 📌 **Jorge** - *Desarrollo Técnico*
+
 🔹 Encargado de la compilación del sistema base (Capítulos 6–8).
+
 🔹 Implementa scripts de arranque y configuración.
+
 🔹 Instala y configura GRUB.
+
 🔹 Ejecuta pruebas funcionales en entorno virtual.
 
 📌 **Matías** - *Desarrollo Técnico*
+
 🔹 Instala y compila paquetes esenciales del sistema.
+
 🔹 Verifica estabilidad y rendimiento.
+
 🔹 Apoya en la integración del gestor GRUB.
+
 🔹 Realiza pruebas en chroot.
 
-📌 **Brigitte** - *Product Owner*
-🔹 Define objetivos y revisa entregables.
-🔹 Coordina personalización del sistema.
-🔹 Supervisa tiempos y calidad.
-🔹 Valida cumplimiento de requisitos funcionales.
+
 
 ## II.B CRONOGRAMA
 
@@ -216,4 +233,3 @@ Construir un sistema operativo funcional basado en Linux From Scratch, completam
 
 ---
 
-¿Te gustaría que lo prepare en formato PDF, Word o HTML listo para presentación o entrega? También puedo ayudarte a generar los gráficos y diagramas necesarios si me das más detalles.
